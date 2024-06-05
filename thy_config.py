@@ -5,4 +5,4 @@ JSON_FILE_PATH = r'F:\DataScience\Practice\Machine Learning\Second_API\files\pro
 # MODEL_FILE_PATH = 'Logistic_Model.pkl'
 # JSON_FILE_PATH = 'project_data.json'
 
-PORT_NUMBER = 5000
+PORT_NUMBER = 8080
