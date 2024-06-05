@@ -77,4 +77,4 @@ def Thy_prediction():
     
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = thy_config.PORT_NUMBER,debug=True)
+    app.run(host = '0.0.0.0', port = thy_config.PORT_NUMBER,debug=False)
