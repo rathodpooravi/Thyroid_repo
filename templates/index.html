@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Prediction</title>
+</head>
+
+<body style="background-color: rgb(173, 216, 230);"> 
+<!-- <body background-image="static/dhoni.jpg" background-repeat="no-repeat” background-size="cover”> -->
+    <!-- <center> -->
+    <center>
+    <h1>Thyroid Prediction </h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    
+    <form method="POST" action ="/predict_prediction">
+        
+        <label>AGE:</label>
+        <input type="text" name ="Age">
+        <br>
+        <br> 
+        <label>Gender:</label>
+        <select name="Gender">
+            <option value="F">F</option>
+            <option value="M">M</option></select>
+        
+        <br>  
+        <br> 
+        <label>Smoking:</label>
+        <select name="Smoking">
+            <option value="Yes">Yes</option>
+            <option value="No">NO</option></select>
+        
+        <br>  
+        <br>
+        <label>HxSmoking:</label>
+        <select name="HxSmoking">
+            <option value="Yes">Yes</option>
+            <option value="No">NO</option></select>
+        
+        <br>  
+        <br>
+        <label>HxRadiothreapy:</label>
+        <select name="HxRadiothreapy">
+            <option value="Yes">Yes</option>
+            <option value="No">NO</option></select>
+        <br>  
+        <br> 
+        <label>ThyroidFunction:</label>
+        <select name="ThyroidFunction">
+            <option value="Clinical Hyperthyroidism">Clinical Hyperthyroidism</option>
+            <option value="Clinical Hypothyroidism">Clinical Hypothyroidism</option>
+            <option value="Euthyroid">Euthyroid</option>
+            <option value="Subclinical Hyperthyroidism">Subclinical Hyperthyroidism</option>
+            <option value="Subclinical Hypothyroidism">Subclinical Hypothyroidism</option></select>
+        <br>  
+        <br>
+        <label>PhysicalExamination:</label>
+        <select name="PhysicalExamination">
+            <option value="Diffuse goiter">Diffuse goiter</option>
+            <option value="Multinodular goiter">Multinodular goiter</option>
+            <option value="Normal">Normal</option>
+            <option value="Single nodular goiter-left">Single nodular goiter-left</option>
+            <option value="Single nodular goiter-right">Single nodular goiter-right</option></select>
+        <br>  
+        <br> 
+        <label>Adenopathy:</label>
+        <select name="Adenopathy">
+            <option value="Bilateral">Bilateral</option>
+            <option value="Extensive">Extensive</option>
+            <option value="Left">Left</option>
+            <option value="No">No</option>
+            <option value="Posterior">Posterior</option>
+            <option value="Right">Right</option></select>
+        
+        <br>  
+        <br> 
+        <label>Pathology:</label>
+        <select name="Pathology">
+            <option value="Follicular">Follicular</option>
+            <option value="Hurthel cell">Hurthel cell</option>
+            <option value="Micropapillary">Micropapillary</option>
+            <option value="Papillary">Papillary</option></select>
+        
+        <br>  
+        <br>       
+        <label>Focality:</label>
+        <select name="Focality">
+            <option value="Uni-Focal">Uni-Focal</option>
+            <option value="Multi-Focal">Multi-Focal</option></select>
+        
+        <br>  
+        <br>  
+        <label>Risk:</label>
+        <select name="Risk">
+            <option value="Low">Low</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="High">High</option></select>
+        
+        
+        <br>  
+        <br> 
+        <label>T:</label>
+        <select name="T">
+            <option value="T1a">T1a</option>
+            <option value="T1b">T1b</option>
+            <option value="TT2">T2</option>
+            <option value="TT3a">T3a</option>
+            <option value="T3b">T3b</option>
+            <option value="T4a">T4a</option>
+            <option value="T4b">T4b</option></select>
+        
+        <br>  
+        <br> 
+        <label>N:</label>
+        <select name="N">
+            <option value="N0">N0</option>
+            <option value="N1a">N1a</option>
+            <option value="N1b">N1b</option></select>
+        
+        <br>  
+        <br>
+        
+        <label>M:</label>
+        <select name="M">
+            <option value="M0">M0</option>
+            <option value="M1">M1</option></select>
+        
+        <br>  
+        <br> 
+        <label>Stage:</label>
+        <select name="Stage">
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="IVA">IVA</option>
+            <option value="IVB">IVB</option>
+            <option value="III">III</option></select>
+        
+        <br>  
+        <br> 
+        <label>Response:</label>
+        <select name="Response">
+            <option value="Excellent">Excellent</option>
+            <option value="Structural Incomplete">Structural Incomplete</option>
+            <option value="Indeterminate">Indeterminate</option>
+            <option value="Biochemical Incomplete">Biochemical Incomplete</option></select>
+        
+        <br>  
+        <br>   
+              
+         
+        
+         
+         <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+    <br>  
+    <br>
+
+</body>
+</html>
+
