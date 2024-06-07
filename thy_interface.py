@@ -38,9 +38,9 @@ def Thy_prediction():
     
         if predict == 'Yes':
     
-            return jsonify({'Result': f'Prediction {predict} Thyroid will not be reccured '})
+            return jsonify({'Result': f'Prediction: {predict} Thyroid will be reccured '})
         else:
-            return jsonify({'Result': f'Prediction is:{predict} Thyroid will be  reccured'})
+            return jsonify({'Result': f'Prediction is: {predict} Thyroid will not reccured'})
     
 # else:
 #         print('We are in Get Method')
